@@ -1,6 +1,6 @@
 
 <p align="center">
-  <img src="https://media.giphy.com/media/3oEjI6SIIHBdRxXI40/giphy.gif" alt="Futuristic Neon" />
+  <img src="https://readme-typing-svg.herokuapp.com?font=Orbitron&size=30&duration=4000&color=00F7FF&center=true&vCenter=true&multiline=true&width=600&height=80&lines=Welcome+to+Sorabh's+Futuristic+Hub;AI+Enthusiast+%7C+Web+Engineer+%7C+Tech+Visionary" alt="Typing SVG" />
 </p>
 
 <h1 align="center">👋 Hi there, I'm Sorabh Kapoor</h1>

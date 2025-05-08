@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sorabh Kapoor Portfolio</title>
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    // Tailwind config for custom animations and dark mode
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          keyframes: {
+            fadeIn: {
+              '0%': { opacity: '0', transform: 'translateY(10px)' },
+              '100%': { opacity: '1', transform: 'translateY(0)' }
+            },
+            neon: {
+              '0%, 100%': { textShadow: '0 0 8px rgba(0,255,255,0.7)' },
+              '50%': { textShadow: '0 0 16px rgba(0,255,255,1)' }
+            }
+          },
+          animation: {
+            fadeIn: 'fadeIn 1s ease-out forwards',
+            neon: 'neon 2s ease-in-out infinite'
+          }
+        }
+      }
+    };
+  </script>
+</head>
+<body class="bg-gray-900 text-gray-100 dark:bg-gray-50 dark:text-gray-900 transition-colors duration-500">
+  <!-- NAVBAR -->
+  <nav class="flex justify-between items-center p-6">
+    <h1 class="text-2xl font-bold animate-neon">Sorabh Kapoor</h1>
+    <button id="theme-toggle" class="p-2 rounded bg-gray-800 dark:bg-gray-200">
+      Toggle Theme
+    </button>
+  </nav>
+
+  <main class="max-w-4xl mx-auto px-6 space-y-16">
+    <!-- HERO -->
+    <section class="text-center py-16">
+      <h2 class="text-4xl font-extrabold mb-4 animate-fadeIn">Future-Ready Computer Science Engineer</h2>
+      <p class="text-lg opacity-80 animate-fadeIn delay-200">Building intelligent systems with AI & Web Technologies</p>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="space-y-4 animate-fadeIn delay-400">
+      <h3 class="text-3xl font-semibold border-b-2 inline-block border-cyan-400">About Me</h3>
+      <p>I am a B.Tech Computer Science & Engineering student at GNDEC with a passion for AI, semantic web, and full-stack development. Constantly exploring futuristic tech to build impactful solutions.</p>
+    </section>
+
+    <!-- EDUCATION -->
+    <section id="education" class="space-y-4 animate-fadeIn delay-600">
+      <h3 class="text-3xl font-semibold border-b-2 inline-block border-cyan-400">Education</h3>
+      <div class="bg-gray-800 dark:bg-gray-200 p-6 rounded-lg shadow-lg">
+        <h4 class="text-xl font-bold">B.Tech in Computer Science & Engineering</h4>
+        <p>Guru Nanak Dev Engineering College (Grad. June 2026) | CGPA: 6.92 (till 5th sem)</p>
+        <p class="mt-2 font-medium">Relevant Coursework:</p>
+        <ul class="list-disc list-inside">
+          <li>Data Structures & Algorithms</li>
+          <li>DBMS, Operating Systems</li>
+          <li>Computer Networks, Machine Learning</li>
+          <li>Artificial Neural Networks, Semantic Web</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="space-y-4 animate-fadeIn delay-800">
+      <h3 class="text-3xl font-semibold border-b-2 inline-block border-cyan-400">Skills</h3>
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+        <div class="space-y-2">
+          <h4 class="font-semibold">Programming Languages</h4>
+          <ul class="list-disc list-inside">
+            <li>Python (Basic)</li>
+            <li>C, C++ (Intermediate)</li>
+            <li>HTML, CSS, JavaScript</li>
+          </ul>
+        </div>
+        <div class="space-y-2">
+          <h4 class="font-semibold">Technologies & Tools</h4>
+          <ul class="list-disc list-inside">
+            <li>Flask, OpenCV, SQLite</li>
+            <li>Tailwind CSS, GitHub, VS Code</li>
+            <li>Machine Learning, Data Analysis</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="space-y-4 animate-fadeIn delay-1000">
+      <h3 class="text-3xl font-semibold border-b-2 inline-block border-cyan-400">Projects</h3>
+      <div class="space-y-6">
+        <div class="p-4 bg-gray-800 dark:bg-gray-200 rounded-lg shadow-lg">
+          <h4 class="text-xl font-bold">Semantic Web Project</h4>
+          <p class="mt-1">Training-based project on semantic web technologies: modeled ontologies with RDF/OWL, queried with SPARQL, gained linked data insights.</p>
+        </div>
+        <div class="p-4 bg-gray-800 dark:bg-gray-200 rounded-lg shadow-lg">
+          <h4 class="text-xl font-bold">FaceLoc Attendance System</h4>
+          <p class="mt-1">AI-powered real-time attendance using OpenCV face recognition integrated with Flask & SQLite, featuring dashboard & notifications.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ACHIEVEMENTS & CERTIFICATIONS -->
+    <section id="achievements" class="space-y-4 animate-fadeIn delay-1200">
+      <h3 class="text-3xl font-semibold border-b-2 inline-block border-cyan-400">Achievements & Certifications</h3>
+      <ul class="list-disc list-inside space-y-2">
+        <li>Infosys Springboard: Programming Fundamentals (Python Part 1 & 2), Basics of Python</li>
+        <li>Semantic Web Training (1-month certified)</li>
+        <li>Participated in college sports & workshops on Data Science, Virtual Labs, Life Skills</li>
+      </ul>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="text-center space-y-4 animate-fadeIn delay-1400 pb-16">
+      <h3 class="text-3xl font-semibold">Get in Touch</h3>
+      <p>Email: <a href="mailto:raj.sobu027@gmail.com" class="underline">raj.sobu027@gmail.com</a></p>
+      <div class="flex justify-center space-x-4">
+        <a href="https://github.com/Sorabh-Kapoor" target="_blank" class="underline">GitHub</a>
+        <a href="https://www.linkedin.com/in/sorabh-kapoor-907588315" target="_blank" class="underline">LinkedIn</a>
+      </div>
+    </section>
+  </main>
+
+  <!-- THEME TOGGLE SCRIPT -->
+  <script>
+    const btn = document.getElementById('theme-toggle');
+    const html = document.documentElement;
+    btn.addEventListener('click', () => {
+      if (html.classList.contains('dark')) {
+        html.classList.remove('dark');
+        localStorage.theme = 'light';
+      } else {
+        html.classList.add('dark');
+        localStorage.theme = 'dark';
+      }
+    });
+    // Load stored preference
+    if (localStorage.theme === 'light') html.classList.remove('dark');
+    else html.classList.add('dark');
+  </script>
+</body>
+</html>

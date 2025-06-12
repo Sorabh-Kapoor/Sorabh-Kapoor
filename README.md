@@ -52,7 +52,6 @@
 **B.Tech in Computer Science & Engineering**  
 _Guru Nanak Dev Engineering College_  
 _Expected Graduation: June 2026_  
-_CGPA: 6.92 (till 5th sem)_
 
 ---
 
